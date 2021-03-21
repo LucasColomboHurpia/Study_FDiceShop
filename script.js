@@ -2,7 +2,7 @@ let catalog = document.getElementById('catalog')
 
 let howManyCatalog = 10 //change this to set how many items will appear on main page
 console.log(window.screen.availWidth)
-//generates every item
+//generates every catalog item
 const loadCatalog = () =>{
   for(i=0;i<howManyCatalog;i++){
 
