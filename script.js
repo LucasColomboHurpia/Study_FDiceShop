@@ -1,7 +1,7 @@
 let catalog = document.getElementById('catalog')
 
-let howManyCatalog = 8 //change this to set how many items will appear on main page
-
+let howManyCatalog = 10 //change this to set how many items will appear on main page
+console.log(window.screen.availWidth)
 //generates every item
 const loadCatalog = () =>{
   for(i=0;i<howManyCatalog;i++){
@@ -10,6 +10,7 @@ const loadCatalog = () =>{
   newItem.classList.add('catalogItem')
 
   let img = document.createElement('img')
+  img.classList.add('imgItem')
   img.height = '200'
   newItem.appendChild(img);
 
@@ -49,4 +50,6 @@ const specifyCatalogItem = (w,x) =>{
   if(w==5){x.children[0].src = './Assets/dices/71fYg4LvELL._AC_SX425_.jpg';x.children[1].innerHTML = ' D20 GOLDEN DICE';x.children[3].innerHTML = '$ 50.00'}
   if(w==6){x.children[0].src = './Assets/dices/chain-mail-dice-bag-2.jpg';x.children[1].innerHTML = 'CHAIN MAIL DICE BAG';x.children[3].innerHTML = '$ 28.99'}
   if(w==7){x.children[0].src = './Assets/dices/blueDiceSet.jpg';x.children[1].innerHTML = 'BLUE WAVES DICE SET';x.children[3].innerHTML = '$ 29.99'}
+  if(w==8){x.children[0].src = './Assets/dices/setDiceCase.PNG';x.children[1].innerHTML = 'SPECIAL FULL CASE SET';x.children[3].innerHTML = '$ 200.50'}
+  if(w==9){x.children[0].src = './Assets/dices/e099bf84748e6ee85f3934317b9c1b7ebc58bb6a323c611452e5cb2d6687ece8.jpg';x.children[1].innerHTML = 'METAL DICE SET + POCKET BAG';x.children[3].innerHTML = '$ 88.50'}
 }

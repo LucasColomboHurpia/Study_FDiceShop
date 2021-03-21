@@ -78,7 +78,7 @@ background-size: cover;
 #catalog{
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 4fr 4fr 4fr 4fr;
+    grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
     justify-items: center;
 
     background-color: white;
@@ -96,7 +96,7 @@ background-size: cover;
 /* discount text*/
 .disc{
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
     color: red;
 }
@@ -202,5 +202,60 @@ font-weight: bold;
     justify-items: right;
     cursor: default;
 }
+
+@media (max-width: 1028px) {
+    .imgItem{width: 150px; height: 150px;}
+}
+@media (max-width: 775px) {
+    #firstBannerHalf{display: none;}
+    #secondBannerHalf{display: none;}
+    #banner{
+        grid-template-columns: auto;
+    }
+    /*   info menu/list */
+    #infoMenu{
+        grid-template-rows:  6fr 6fr 6fr 6fr 6fr 6fr;
+        grid-template-columns: auto;
+    }
+      /*   info menu/list  items*/
+    .infoMenuOpt{height: 35px;}
+    #diceAward{height: 30px; margin-right: 5px;}
+
+    /* store catalog*/
+    #catalog{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 2fr;
+        justify-items: center;
+        grid-gap: 20px;
+        padding-top: 5px;padding-bottom: 5px;
+    }
+    .catalogItem{height: 100%;}
+    /* item image in catalog */
+    .imgItem{width: 75px; height: 75px;}
+
+    /* biography */
+    #aboutThePlace{
+        width: 100%;
+        height: 35%;
+        position: relative;
+    }
+    #biography{
+     width: 300px;
+     font-size: 1.1rem;
+    }
+
+    /* advantages, services */
+    #advantages{font-size: 0.7rem;}
+   /*  items ins bottom of page */
+    .iconBottom{width: 28px;}
+    /* end of page */
+    #endPage{
+        font-size: 0.7rem;
+        grid-gap: 10px;
+        grid-template-columns: 3fr 3fr 3fr 0px
+    }
+}
+
 
 
