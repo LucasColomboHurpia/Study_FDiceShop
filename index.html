@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Dice Shop</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="slider.css" rel="stylesheet" >
+    <link rel="icon" href="./Assets/icons/icon.png">
+</head>
+
+<body id='body'>
+<div id='banner'>
+    <div id='firstBannerHalf'>
+        <span class='bannerOpt'>bags</span>
+        <span class='bannerOpt'>dices</span>
+        <span class='bannerOpt'>custom cases</span>
+        <span class='bannerOpt'>About Us</span>
+        <span></span>
+    </div>
+    <span class='logo'><img src="./Assets/Banners/FKSPNG.png"></span>
+    <div id='secondBannerHalf'>
+      <span></span>
+    <span class='bannerOpt'>Contact us</span>
+    <span class='bannerOpt'>Our Values</span>
+<!--     <span class='bannerOpt'>[Language]</span> -->
+    <span class='bannerOpt'><img src="./Assets//icons/baseline_search_white_18dp.png"></span>
+    <span class='bannerOpt'><img src="./Assets/icons/baseline_shopping_cart_white_18dp.png"></span>
+    </div>
+</div>
+<div id='bann'></div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="slider1Text">
+        Celebrating our 8th Aniversary!<br>
+        All personalized dice bags<br>
+       <span style="color: red;font-size: 40px;">55% OFF</span>
+       <br><br>
+       <button id='slide1Button'>LEARN MORE</button>
+      </div>
+      <img class='imgSlide' src="./Assets/Banners/1banner.png" >
+      <!-- <div class="text">Caption Text</div> -->
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="slider2Text">
+        LIMITED EDITION<br><br>
+        Handcrafted Kits<br>  
+        Includes bags, dices and cups for your best rolls!
+        <br><br>
+        <button id='slide2Button'>LEARN MORE</button>
+      </div>
+      <img class='imgSlide' src="./Assets/Banners/2banner.png">
+      <!-- <div class="text">Caption Two</div> -->
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="slider3Text">
+        More than 500 Styles and colors!
+      </div>
+      <img class='imgSlide'  src="./Assets/Banners/mark-olsen-abstractdicewallpapermdo.jpg">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <div style="text-align:center"><!-- The dots/circles -->
+      <span class="dot" onclick="currentSlide(1)" style="left: 48%"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)" style="left: 52%"></span>
+    </div>
+  </div>
+  <!--Information Section-->
+ <div id='infoMenu'>
+   <span class='infoMenuOpt'>Free Delivery</span>
+   <span class='infoMenuOpt'>2 Years Warranty</span>
+   <span class='infoMenuOpt'>8 Years of Excelency</span>
+   <span class='infoMenuOpt'>Customer-Service 24h</span>
+   <span class='infoMenuOpt'>Customized Products</span>
+   <span class='infoMenuOpt'><img src="./Assets/icons/baseline_casino_white_18dp.png">2020 Best Dice Quality Award</span>
+ </div>
+
+ <!--Catalog-->
+<div id='catalog'></div>
+
+<!--biography-->
+<div id='aboutThePlace'>
+  <div id='biography'>
+  Fake Dice Shop™ ia well respected (not really) and revered store, 
+  this is a fictional webstore page made for web-design study purposes any correlation with a real store is pure coincidence.
+  Since 1850, attending our clients with excelency and respect. Crafting dices from rare jewels, pure gold and plastic.
+  In respect to our ancient values set by our ancestors, all of our bags are crafted with leather from hunted Yaks from Alaska.
+  </div>
+ </div>
+
+ <!--advantages, services-->
+<div id='advantages'>
+  <span class="advantagesItem"><img src="./Assets/icons/baseline_public_black_18dp.png"> WorldWide Delivery</span>
+  <span class="advantagesItem"><img src="./Assets/icons/baseline_credit_card_black_18dp.png">6x Credit Card </span>
+  <span class="advantagesItem"><img src="./Assets/icons/baseline_explore_black_18dp.png">Find Us </span>
+  <span class="advantagesItem">Return Policy</span>
+</div>
+
+<!--end of page, social medias, info, contact-->
+<div id="endPage">
+  <div id='socialMedia'>
+    <div class="socialMediaIcon"><img src="./Assets/social_media/facebook.png" width="30px"> Facebook Page</div>
+    <div class="socialMediaIcon"><img src="./Assets/social_media/87390.png" width="30px"> Instagram</div>
+    <div class="socialMediaIcon"><img src="./Assets/social_media/2ddcdce2-ebd6-44de-a246-853ea232182f.png" width="30px">Youtube Channel</div>
+  </div>
+  <div id='infoList'>
+    <span>FAQ</span>
+    <span>PARTNERSHIPS</span>
+    <span>CUSTOMER SERVICE</span>
+    <span>AWARDS</span>
+    <span></span>
+  </div>
+  <div id='ContactInfo'>
+    <span>Location: Somewhere in Vancouver</span>
+    <span>Cellphone: (11)9999-9999</span>
+    <span style="cursor: pointer;">Work with us</span>
+  </div>
+</div>
+<span></span>
+</body>
+
+<script src="script.js"></script>
+<script src="sliderScript.js"></script>
+</html>

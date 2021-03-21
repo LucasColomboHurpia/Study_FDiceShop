@@ -1,0 +1,206 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(./Assets/Banners/GrassmarketMono-0.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+    margin: 0%;
+}
+/* used to hide stuff */
+.hide{display: none;}
+
+/* first half of banner, before logo */
+#firstBannerHalf{    
+    text-transform: uppercase;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto 30px;
+}
+
+.logo:hover{cursor: pointer;}
+
+/* second half of banner, after logo */
+#secondBannerHalf{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: 120px auto auto auto auto;
+       justify-content: right;
+     align-items: center;
+}
+
+/* banner */
+#banner{
+    position: fixed;
+
+    z-index: 1;
+
+    width: 100%;
+    background-color: #081f2d;
+    height: 80px;
+    border-bottom: solid rgb(194, 3, 3) 0.5px;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 3fr 3fr;
+     justify-items: center;
+     align-items: center;
+}
+/* banner item properties */
+.bannerOpt{color: white; font-weight: bold; cursor: pointer;}
+.bannerOpt:hover{ text-decoration: underline;}
+
+  /*   info menu/list */
+#infoMenu{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 6fr 6fr  6fr  6fr  6fr  6fr ;
+    cursor: default;
+    justify-items: center;
+    color: white;
+    background-color: rgb(58, 58, 58);
+    margin-top: 0%;
+}
+  /*   info menu/list  items*/
+.infoMenuOpt{
+    width: 100%; 
+    height: 80px; 
+    text-align: center;
+    display: flex; 
+    align-items: center;justify-content: center;
+}
+.infoMenuOpt:hover{width: 100%;background-color: rgb(107, 105, 105);}
+
+/* store catalog*/
+#catalog{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    justify-items: center;
+
+    background-color: white;
+}
+.catalogItem{width: 100%; height: 400px;color: black;text-align: center;}
+/* .catalogItem:hover{background-color: rgb(109, 108, 108);} */
+
+/* name of item in catalog*/
+.Item1{
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    cursor: default;
+}
+
+/* discount text*/
+.disc{
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+/* price text */
+.price{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 1.3rem;
+font-weight: bold;
+}
+.price:hover{color: green; cursor: default;}
+
+/* "buy now" button */
+.buttonBuy{
+    font-size: 1rem;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(189, 30, 30);
+    color: white;
+    padding:5px;   
+}
+.buttonBuy:hover{
+    background-color: rgb(39, 0, 180);
+    color: white;
+    cursor: pointer;}
+
+/* biography */
+#aboutThePlace{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+#biography{
+    position: relative;
+    padding: 30px;
+    width: 700px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #383838b9;
+    margin: auto;
+    top: 15%;
+}
+/* advantages, services */
+#advantages{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    justify-items: center;
+    width: 100%;
+     height: 50px;
+      background-color: rgb(2, 88, 88);
+    }
+    .advantagesItem{
+        width: 100%; 
+        font-weight: bold;
+        text-align: center;
+        display: flex; 
+        align-items: center;justify-content: center;
+    }
+    .advantagesItem:hover{cursor: pointer; background-color: rgb(11, 129, 129);}
+
+/*     end of page */
+#endPage{
+    width: 100%;
+    padding-top: 10px;
+    background-color: #081f2d;
+    color: white;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 3fr 3fr 10px
+}
+/* social media links */
+#socialMedia{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 3fr 3fr 3fr;
+  
+  align-content: center;
+  padding-left: 10px;
+}
+/* social media icons */
+.socialMediaIcon{
+    display: grid;
+    grid-template-columns: 35px auto;
+    grid-template-rows:  auto auto auto;
+    align-items: center;
+    grid-gap: 5px;
+    cursor: default;
+}
+/* misc info list */
+#infoList{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:  auto auto auto;
+    cursor: default;
+}
+/* contact info list */
+#ContactInfo{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:  auto auto auto;
+    justify-items: right;
+    cursor: default;
+}
+
+
