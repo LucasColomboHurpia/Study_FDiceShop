@@ -22,7 +22,7 @@ height: 80px;
 
 /* Images used in Slides */
 .imgSlide
-{height: 80vh;
+{height: 70vh;
   float: right;
 }
 
@@ -171,7 +171,8 @@ top: 94%;
 /* text on slide 1*/
 .slider1Text {
   background-color: #132f41c0;
-  font-size:20px
+  font-size:20px;
+  right: 10%;
 }
 /* text on slide 2*/
 .slider2Text {  

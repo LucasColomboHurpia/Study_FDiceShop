@@ -1,3 +1,4 @@
+let body = document.getElementById('body')
 let catalog = document.getElementById('catalog')
 
 let howManyCatalog = 10 //change this to set how many items will appear on main page
@@ -38,6 +39,7 @@ const loadCatalog = () =>{
 
 onload = function () {
   loadCatalog();
+  loadMobileMenu();
 }
 
 //set properties to each item
@@ -52,4 +54,62 @@ const specifyCatalogItem = (w,x) =>{
   if(w==7){x.children[0].src = './Assets/dices/blueDiceSet.jpg';x.children[1].innerHTML = 'BLUE WAVES DICE SET';x.children[3].innerHTML = '$ 29.99'}
   if(w==8){x.children[0].src = './Assets/dices/setDiceCase.PNG';x.children[1].innerHTML = 'SPECIAL FULL CASE SET';x.children[3].innerHTML = '$ 200.50'}
   if(w==9){x.children[0].src = './Assets/dices/e099bf84748e6ee85f3934317b9c1b7ebc58bb6a323c611452e5cb2d6687ece8.jpg';x.children[1].innerHTML = 'METAL DICE SET';x.children[3].innerHTML = '$ 88.50'}
+}
+let n = 0
+let t=0
+let menuMobile = document.getElementById('menuMobile');
+let banner = document.getElementById('banner');
+let mobileMenuOpen = body.lastChild
+let span = document.getElementById('span')
+let logoSpan = document.getElementById('logoSpan');
+let firstBannerHalf = document.getElementById('firstBannerHalf')
+let secondBannerHalf = document.getElementById('secondBannerHalf')
+
+menuMobile.onclick = function() {console.log(n);console.log(banner.children)
+  if(t==0){t++;
+  banner.removeChild(firstBannerHalf)
+  banner.removeChild(secondBannerHalf)
+  banner.removeChild(logoSpan)
+}
+  if(n==0){ n=1;  populateMenu();}
+    else{
+      n=0
+      returnMenutoNormal()
+    }
+}
+
+const returnMenutoNormal = () =>{
+  logoSpan.style.display = 'block'
+  mobileMenuOpen.style.display = "none";
+  banner.appendChild(menuMobile)
+  banner.appendChild(logoSpan)
+}
+
+const loadMobileMenu = () =>{
+  let mobileMenuOpen = document.createElement('div')
+  mobileMenuOpen.classList.add('hide'); //hide when load
+  body.appendChild(mobileMenuOpen)
+
+}
+
+const populateMenu = () =>{
+  logoSpan.style.display = 'none'
+
+  mobileMenuOpen.classList.remove('hide');
+  mobileMenuOpen.classList.add('mobileMenuOpen');
+  mobileMenuOpen.style.display = "grid";
+  mobileMenuOpen.appendChild(menuMobile)
+
+  firstBannerHalf.style.display = "grid";
+  secondBannerHalf.style.display = "grid";
+
+  firstBannerHalf.style.gridTemplateColumns = "auto";
+  firstBannerHalf.style.gridTemplateRows = "auto auto auto auto";
+
+  secondBannerHalf.style.gridTemplateColumns = "auto";
+  secondBannerHalf.style.gridTemplateRows = "auto auto auto auto";
+  secondBannerHalf.style.justifyContent = "left";
+
+  mobileMenuOpen.appendChild(firstBannerHalf)
+  mobileMenuOpen.appendChild(secondBannerHalf)
 }
